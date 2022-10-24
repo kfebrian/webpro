@@ -1,0 +1,72 @@
+/* Register */
+body{
+    font-family: 'Robooto';
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png")
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    width: 50vw;
+    height: 80vh;
+    text-align: center;
+    
+}
+
+form h2{
+    font-family: 'Roboto';
+}
+
+form hr{
+    width: 10%;
+    height: 0.3rem;
+    background-color: darkorange;
+    border: none;
+}
+
+form p{
+    color: grey;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    height: 60%;
+}
+
+form div input{
+    width: 70%;
+    height: 3rem;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Roboto';
+}
+
+form button{
+    margin-top: 1.2rem;
+    width: 70%;
+    border-radius: 20px;
+    height: 3rem;
+    border: none;
+    background-color: darkorange;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+form button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+

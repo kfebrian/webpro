@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Rojak Reference</title>
+
+    <style>
+        body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:fit-content;
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 20%;
+    right: 20%;
+    border: 1px ;
+    border-style: none;
+    box-shadow:1px 1px 5px 5px #a9a9a9;
+    border-radius: 5PX;
+    
+}
+form hr{
+    width: 50%;
+    height: 1px;
+    background-color: darkorange;
+    border: none;
+}
+
+form h2{
+    text-align: center;
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    height: 60%;
+    line-height: 10px;
+
+}
+
+form div input{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form button{
+    margin-top: 1.2rem;
+    width: 50%;
+    border-radius: 20px;
+    height: 3rem;
+    border: none;
+    background-color: #ff8c00;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+
+form a{
+    text-decoration: none;
+    color: white;
+}
+    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login">
+        <form action="">
+            <h2>Login</h2>
+            <hr>
+            <p>Please enter your detail to access your account</p>
+        
+            <div>
+                <p>Username</p>
+                <input type="text" placeholder="Enter your username">
+                <br>
+                <p>Password</p>
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <center>
+                <a href="index.html"><button type="button">Login</button></a>
+            </center>
+        </form>
+        
+    </div>
+    
+
+</body>
+</html>
