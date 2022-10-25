@@ -5,109 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Rojak Reference</title>
-
-    <style>
-        body{
-    font-family: 'Montserrat', sans-serif;
-    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
-}
-
-.login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:fit-content;
-    width: 50%;
-    margin: auto;
-    padding: 50px;
-    position: fixed;
-    top: 50%;
-    bottom: 50%;
-    left: 20%;
-    right: 20%;
-    border: 1px ;
-    border-style: none;
-    box-shadow:1px 1px 5px 5px #a9a9a9;
-    border-radius: 5PX;
-    
-}
-form hr{
-    width: 50%;
-    height: 1px;
-    background-color: darkorange;
-    border: none;
-}
-
-form h2{
-    text-align: center;
-
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2rem;
-    height: 60%;
-    line-height: 10px;
-
-}
-
-form div input{
-    width: 100%;
-    height: 3rem;
-    border: 1px solid gray;
-    text-align: center;
-    border-radius: 10px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-form button{
-    margin-top: 1.2rem;
-    width: 50%;
-    border-radius: 20px;
-    height: 3rem;
-    border: none;
-    background-color: #ff8c00;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-form button:hover{
-    cursor: pointer;
-}
-
-form a{
-    text-decoration: none;
-    color: white;
-}
-    </style>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-    <div class="login">
-        <form action="">
-            <h2>Login</h2>
-            <hr>
-            <p>Please enter your detail to access your account</p>
+    <section class="vh-100">
+       
+        <div class="px-4 py-5  px-md-5 vh-100 overflow-auto" style="background-color: #eee">
+          <div class="container py-5">
+            <div class="row gx-lg-5">
+              <div class="col-lg-6 pt-5">
+                <h1 class="my-5 display-4 fw-bold ls-tight">
+                  The best place <br />
+                  <span class="text-primary">for citing document</span>
+                </h1>
+                
+              </div>
+      
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="card">
+                  <div class="card-body py-5 px-md-5">
+                    <form>
         
-            <div>
-                <p>Username</p>
-                <input type="text" placeholder="Enter your username">
-                <br>
-                <p>Password</p>
-                <input type="password" placeholder="Enter your password">
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <input type="email" id="form3Example3" class="form-control" />
+                        <label class="form-label" for="form3Example3">Email address</label>
+                      </div>
+      
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <input type="password" id="form3Example4" class="form-control" />
+                        <label class="form-label" for="form3Example4">Password</label>
+                      </div>
+      
+                      <!-- Checkbox -->
+                      <div class="form-check d-flex justify-content-left mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                        <label class="form-check-label" for="form2Example33">
+                          Remember Me
+                        </label>
+                      </div>
+      
+                      <!-- Submit button -->
+                    <a href="index.html">
+
+                    <button type="button" class="btn btn-primary btn-block mb-4">
+                        Login
+                    </button>
+                    </a>        
+      
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-            <center>
-                <a href="index.html"><button type="button">Login</button></a>
-            </center>
-        </form>
-        
-    </div>
+          </div>
+        </div>
+    
+      </section>
+      
     
 
 </body>
