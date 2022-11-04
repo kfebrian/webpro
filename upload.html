@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload | Rojak Reference</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand text-primary mb-0 h1" href="#">Reference Upload</a>
+        </div>
+      </nav>
+      <!--Card for Form-->
+      <div class="container">
+        <div class="card mt-2">
+          <div class="card-body">
+            <h5 class="card-title" style="margin-bottom: 2%;">You can upload your reference here!</h5>
+            <form>
+              <!-- Title input -->
+              <div class="form-group row" style="margin-bottom: 2%;">
+                <label for="inputTitle" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                  <input type="title" class="form-control" id="title">
+                </div>
+              </div>
+              <!-- Author input-->
+              <div class="form-group row" style="margin-bottom: 2%;">
+                <label for="inputAuthor" class="col-sm-2 col-form-label">Author's Name</label>
+                <div class="col-sm-10">
+                  <input type="author" class="form-control" id="inputAuthor">
+                </div>
+              </div>
+
+              <!--Publisher Input-->
+              <div class="form-group row" style="margin-bottom: 2%;">
+                <label for="inputPublisher" class="col-sm-2 col-form-label">Publisher</label>
+                <div class="col-sm-10">
+                  <input type="publisher" class="form-control" id="inputPublisher">
+                </div>
+              </div>
+
+              <!--Category-->
+              <div class="form-group row" style="margin-bottom: 2%;">
+                <label for="category" class="col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-10">
+                  <select class="form-control" id="CategorySelect">
+                    <option>Choose...</option>
+                    <option>Technology</option>
+                    <option>Social</option>
+                    <option>Culture</option>
+                    <option>Psychology</option>
+                    <option>Business</option>
+                    <option>Science</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <!--File Upload-->
+              <div class="form-group row" style="margin-bottom: 2%;">
+                <label for="uploadFile" class="col-sm-2 col-form-label">Upload File</label>
+                <div class="col-sm-10">
+                  <input type="file" class="form-control" id="uploadFile">
+                </div>
+              </div>
+
+              <!--Description-->
+              <div class="form-group row" style="margin-bottom: 2%;">
+                <label for="description" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+              </div>
+            </form>
+            <a href="#" class="btn btn-primary">Upload</a>
+          </div>
+        </div>
+      </div> 
+
+      </section>
+</body>
+</html>
