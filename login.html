@@ -33,13 +33,13 @@
         
                       <!-- Email input -->
                       <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3" class="form-control" />
+                        <input onchange="getEmail()" type="email" id="email" class="form-control" />
                         <label class="form-label" for="form3Example3">Email address</label>
                       </div>
       
                       <!-- Password input -->
                       <div class="form-outline mb-4">
-                        <input type="password" id="form3Example4" class="form-control" />
+                        <input onchange="getPass()" type="password" id="password" class="form-control" />
                         <label class="form-label" for="form3Example4">Password</label>
                       </div>
       
@@ -52,12 +52,10 @@
                       </div>
       
                       <!-- Submit button -->
-                    <a href="index.html">
 
-                    <button type="button" class="btn btn-primary btn-block mb-4">
-                        Login
-                    </button>
-                    </a>        
+                    <button onclick="login()"  type="button" class="btn btn-primary btn-block mb-4">
+                      <a style="color: white; text-decoration:none;" href="home.html" id="login">Login</a>
+                    </button>  
       
                     </form>
                   </div>
@@ -69,7 +67,7 @@
     
       </section>
       
-    
-
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+      <script src="./login.js"></script>
 </body>
 </html>

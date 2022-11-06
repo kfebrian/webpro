@@ -99,6 +99,19 @@
   opacity: 0.2;
 }
 
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 
 *,
@@ -7713,6 +7726,10 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
 }
 
 .text-decoration-none {
