@@ -10,28 +10,20 @@
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="static/css/styles.css" rel="stylesheet"/>
-
     </head>
+    
     <body id="page-read">
         <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3" id="readNav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top py-3" id="readNav">
                 <div class="container px-4 px-lg-5">
                     <a class="navbar-brand" href="index.html" style="color: #f4623a;">Reference App</a>
                     <button class="navbar-toggler navbar-toggler-right" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="#about" style="color: #f4623a;">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#services" style="color: #f4623a ;">Services</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html" style="color: #f4623a ;">Logout</a></li>
                         </ul>
                     </div>
@@ -41,32 +33,33 @@
 
         <!-- Deskripsi Referensi -->
         <section class="page-section bg-body">
-            <div class="row" >
-                <div class="col-7">
-                    <img class="border" src="static\assets\img\1-TEMPLATE-JURNAL-ILMIAH-MAHASISWA-AGROTEKNOLOGI-740x1046.jpg" alt="jurnal" height="1000px">
+            <div class="container-fluid row" >
+                <div class="container-fluid col-auto">
+                    <img class="border" src="static\assets\img\1-TEMPLATE-JURNAL-ILMIAH-MAHASISWA-AGROTEKNOLOGI-740x1046.jpg" alt="jurnal" height="900px">
                 </div>
-                <div class="col-5">
+                <div class="col-1"></div>
+                <div class="container-fluid col-5">
                     <div class="row">
-                        <div class="col-8">
-                            <h5 class="fw-normal pt-4">Judul</h5>
-                            <p class="fw-light">Pemrograman Web</p>
-                            <h5 class="fw-normal pt-4">Penulis</h5>
-                            <p class="fw-light">Rojak</p>
-                            <h5 class="fw-normal pt-4">Penerbit</h5>
-                            <p class="fw-light">RojakSquad</p>
-                            <h5 class="fw-normal pt-4">Deskripsi Buku</h5>
-                            <p class="fw-light text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tristique libero. Nunc purus enim, aliquam eget lacus ut, 
+                        <div class="shadow p-3 mb-5 bg-body rounded">
+                            <h5 class="fw-bold pt-4">Judul</h5>
+                            <p class="fw-normal text-justify">Pemrograman Web</p>
+                            <h5 class="fw-bold pt-4">Penulis</h5>
+                            <p class="fw-normal text-justify">Rojak</p>
+                            <h5 class="fw-bold pt-4 ">Penerbit</h5>
+                            <p class="fw-normal text-justify">RojakSquad</p>
+                            <h5 class="fw-bold pt-4">Deskripsi Buku</h5>
+                            <p class="fw-normal text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tristique libero. Nunc purus enim, aliquam eget lacus ut, 
                                 ultricies maximus mauris. Nulla placerat vel nisi sed gravida. Donec dapibus nisi ac aliquet faucibus. Donec in ante eget lacus finibus eleifend. Sed elit nulla, 
                                 fringilla vel tellus vel, ullamcorper cursus ligula. Quisque sit amet ipsum sit amet dui pretium interdum porta quis orci. Vestibulum eu tempus enim, sed aliquet tellus. In pretium, 
-                                turpis at eleifend ullamcorper, leo arcu finibus ex, ut posuere felis purus sit amet sapien. Donec rutrum augue eget lacinia varius. Maecenas fringilla laoreet pulvinar.</p>
-                            <button type="button" class="btn btn-primary">Sitasi</button>
-                            <button type="button" class="btn btn-primary">Add to favorite</button>    
+                                turpis at eleifend ullamcorper, leo arcu finibus ex, ut posuere felis purus sit amet sapien. Donec rutrum augue eget lacinia varius. Maecenas fringilla laoreet pulvinar.</p>   
                         </div>
-                            
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary me-1">Sitasi</button>
+                            <button type="button" class="btn btn-primary">Add to favorite</button> 
+                        </div>   
                     </div>
                 </div>
             </div>
         </section>
-        
     </body>
 </html>
