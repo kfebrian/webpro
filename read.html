@@ -35,14 +35,14 @@
         <section class="page-section bg-body">
             <div class="container-fluid row" >
                 <div class="container-fluid col-auto">
-                    <img class="border" src="static\assets\img\1-TEMPLATE-JURNAL-ILMIAH-MAHASISWA-AGROTEKNOLOGI-740x1046.jpg" alt="jurnal" height="900px">
+                    <img class="border" src="static\assets\img\content.jpeg" alt="buku" height="900px">
                 </div>
                 <div class="col-1"></div>
                 <div class="container-fluid col-5">
                     <div class="row">
                         <div class="shadow p-3 mb-5 bg-body rounded">
                             <h5 class="fw-bold pt-4">Judul</h5>
-                            <p class="fw-normal text-justify">Pemrograman Web</p>
+                            <p class="fw-normal text-justify">Akuntansi Biaya Manufaktur</p>
                             <h5 class="fw-bold pt-4">Penulis</h5>
                             <p class="fw-normal text-justify">Rojak</p>
                             <h5 class="fw-bold pt-4 ">Penerbit</h5>
@@ -54,12 +54,31 @@
                                 turpis at eleifend ullamcorper, leo arcu finibus ex, ut posuere felis purus sit amet sapien. Donec rutrum augue eget lacinia varius. Maecenas fringilla laoreet pulvinar.</p>   
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-primary me-1">Sitasi</button>
-                            <button type="button" class="btn btn-primary">Add to favorite</button> 
+                            <button type="button" class="btn btn-primary me-1" data-bs-toggle="modal" data-bs-target="#modalSitasi">Sitasi</button>
+                            <a href="home.html" type="button" class="btn btn-primary">Add to favorite</a> 
                         </div>   
                     </div>
                 </div>
             </div>
+
+            <!-- Modal Sitasi-->
+            <div class="modal fade" id="modalSitasi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Silahkan Copy Text Dibawah</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="textSitasi">
+                            <p>Rojak. (2022). Akuntasi Biaya Manufaktur. Bandung: RojakSquad.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" style="background-color:#fb7550 ;" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </section>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
