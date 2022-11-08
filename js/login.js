@@ -20,7 +20,7 @@ async function login(){
         if (email === element.email) {
             if (password === element.password) {
                 console.log("Success");
-                window.location.href = "./index.html";
+                window.location.href = "./home.html";
             }
             else{
                 $("#password").css("border", "1px solid red");

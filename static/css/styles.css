@@ -64,6 +64,17 @@
   --bs-body-bg: #fff;
 }
 
+.navHome{
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBtn{
+  background: none;
+  border: none;
+  color: white;
+}
+
 .reference-video{
     margin-top: -80px;
     /* padding-left: 100px; */
@@ -2789,7 +2800,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 100%;
+  width: 50%;
 }
 .input-group > .form-control,
 .input-group > .form-select {
