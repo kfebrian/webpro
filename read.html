@@ -24,14 +24,13 @@
                 <div class="container px-4 px-lg-5">
                     <a class="navbar-brand" href="home.html" style="color: #f4623a;">Reference App</a>
                     <div class="input-group rounded">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                        <button class="searchBtn">
-                          <i class="fas fa-search"></i>
+                        <input id="searchBar" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        <button onclick="search()" class="searchBtn" id="search">
+                            <i class="fas fa-search"></i>
                         </button>
-                      </div>
-                    <!-- <button class="navbar-toggler navbar-toggler-right" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
-                    <!-- class="collapse navbar-collapse" -->
-                    <div id="navbarResponsive"> 
+                    </div>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto my-2 my-lg-0">
                             <li class="nav-item"><a class="nav-link" href="upload.html" style="color: #f4623a ;">Upload</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html" style="color: #f4623a ;">Logout</a></li>
@@ -47,8 +46,7 @@
                 <div class="container-fluid col-auto">
                     <img class="border" src="static\assets\img\content.jpeg" alt="buku" height="900px">
                 </div>
-                <div class="col-1"></div>
-                <div class="container-fluid col-5"> 
+                <div class="container-fluid col-6"> 
                     <div class="row">
                         <div class="shadow p-3 mb-5 bg-body rounded">
                             <h5 class="fw-bold pt-4">Judul</h5>
