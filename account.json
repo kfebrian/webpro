@@ -1,6 +1,5 @@
-{
-    "account": [
+[
     {"email" : "kevin@gmail.com", "password":"imgay"},
     {"email" : "kevin2@gmail.com", "password":"imgay"},
-    {"email" : "kevin3@gmail.com", "password":"imgay"} ]   
-}
+    {"email" : "kevin3@gmail.com", "password":"imgay"}
+]

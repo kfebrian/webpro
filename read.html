@@ -14,6 +14,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="static/css/styles.css" rel="stylesheet"/>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/ae628f5a6f.js" crossorigin="anonymous"></script>
     </head>
     
     <body id="page-read">
@@ -21,10 +23,17 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top py-3" id="readNav">
                 <div class="container px-4 px-lg-5">
                     <a class="navbar-brand" href="home.html" style="color: #f4623a;">Reference App</a>
-                    <button class="navbar-toggler navbar-toggler-right" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        <button class="searchBtn">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                    <!-- <button class="navbar-toggler navbar-toggler-right" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
+                    <!-- class="collapse navbar-collapse" -->
+                    <div id="navbarResponsive"> 
                         <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="home.html" style="color: #f4623a ;">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="upload.html" style="color: #f4623a ;">Upload</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html" style="color: #f4623a ;">Logout</a></li>
                         </ul>
                     </div>
@@ -81,5 +90,7 @@
             </div>  
         </section>
     </body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./js/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>

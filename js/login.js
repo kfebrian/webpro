@@ -14,7 +14,7 @@ function getPass() {
 async function login(){
     let response = await fetch('./account.json');
     let json = await response.json()
-    arrAccount = json.account
+    arrAccount = json
 
     arrAccount.forEach(element => {
         if (email === element.email) {

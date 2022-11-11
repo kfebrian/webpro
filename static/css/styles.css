@@ -64,9 +64,28 @@
   --bs-body-bg: #fff;
 }
 
-.navHome{
-  display: flex;
-  justify-content: space-between;
+tr{
+  text-align: center;
+}
+
+td{
+  height: 8rem;
+}
+
+td button{
+  margin-top: 30%;
+}
+
+#searchTable{
+  width: 70%;
+  margin-top: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#errorMsg{
+  margin-top: 12rem;
+  text-align: center;
 }
 
 .searchBtn{
