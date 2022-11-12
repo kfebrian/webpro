@@ -28,7 +28,7 @@ async function search() {
                                 .append($(`<td>${i}.</td>`))
                                 .append($(`<td>${element.title}</td>`))
                                 .append($(`<td>${element.desc}</td>`))
-                                .append($(`<td><button>Read</button></td>`))
+                                .append($(`<td><button class="btn btn-primary">Read</button></td>`))
                             );
         }
 
