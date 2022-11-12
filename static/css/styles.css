@@ -64,6 +64,36 @@
   --bs-body-bg: #fff;
 }
 
+tr{
+  text-align: center;
+}
+
+td{
+  height: 8rem;
+}
+
+td button{
+  margin-top: 30%;
+}
+
+#searchTable{
+  width: 70%;
+  margin-top: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#errorMsg{
+  margin-top: 12rem;
+  text-align: center;
+}
+
+.searchBtn{
+  background: none;
+  border: none;
+  color: white;
+}
+
 .reference-video{
     margin-top: -80px;
     /* padding-left: 100px; */
@@ -2789,7 +2819,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 100%;
+  width: 50%;
 }
 .input-group > .form-control,
 .input-group > .form-select {
