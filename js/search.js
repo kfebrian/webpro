@@ -1,51 +1,67 @@
-$("#searchResult").hide();
+$(document).ready( function () {
+    $('#searchTable').DataTable( {
+        pageLength : 3,
+        ajax: {
+            url: './references.json',
+            dataSrc: 'references'
+        },
+        columns: [
+            {data: 'no'},
+            {data: 'title'},
+            {data: 'desc'},
+            {data: 'link'}
+        ]
+    } );
+} );
 
-let result;
-let i;
 
-async function search() { 
-    result = [];
-    $("#referencesTable").empty();
 
-    let searchInput =  $("#searchBar").val();
+// async function search() { 
 
-    let response = await fetch('./references.json');
-    let json = await response.json()
-    let references = json
+//     let searchInput =  $("#searchBar").val();
 
-    i = 1;
-    references.forEach(element => {
-        let text = element.title
-        let position = text.toLowerCase().search(searchInput);
+//     let response = await fetch('./references.json');
+//     let json = await response.json()
+//     let references = json.references
+
+//     i = 1;
+//     references.forEach(element => {
+//         let text = element.title
+//         let position = text.toLowerCase().search(searchInput);
 
         
 
-        if (position !== -1) {
-            result.push(element)
+//         if (position !== -1) {
+//             result.push(element)
 
-            $("#searchTable").find('tbody')
-                            .append($('<tr>')
-                                .append($(`<td>${i}.</td>`))
-                                .append($(`<td>${element.title}</td>`))
-                                .append($(`<td>${element.desc}</td>`))
-                                .append($(`<td><button>Read</button></td>`))
-                            );
-        }
+//             $("#searchTable").find('tbody')
+//                             .append($('<tr>')
+//                                 .append($(`<td>${i}.</td>`))
+//                                 .append($(`<td>${element.title}</td>`))
+//                                 .append($(`<td>${element.desc}</td>`))
+//                                 .append($(`<td><button>Read</button></td>`))
+//                             );
+//         }
 
-        i++;
-    });
+//         i++;
+//     });
 
-    $("#page").hide();
+//     $("#page").hide();
 
-    if (result.length > 0) {
-        $("#errorMsg").hide();
-        $("#searchTable").show();
-    } else{
-        $("#searchTable").hide();
-        $("#errorMsg").show();
-    }
+//     if (result.length > 0) {
+//         $("#errorMsg").hide();
+//         $("#searchTable").show();
+//         $(document).ready( function () {
+//             $('#searchTable').DataTable({
+//                "pageLength": 5
+//             });
+//        } );
+//     } else{
+//         $("#searchTable").hide();
+//         $("#errorMsg").show();
+//     }
 
-    $("#searchResult").show();
-};
+//     $("#searchResult").show();
+// };
 
 
