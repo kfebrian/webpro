@@ -24,7 +24,7 @@
         <div class="card mt-2">
           <div class="card-body">
             <h5 class="card-title" style="margin-bottom: 2%;">You can upload your reference here!</h5>
-            <form>
+            <form id="formUpload" action="/" method="post" onsubmit="return validateForm()">
               <!-- Title input -->
               <div class="form-group row" style="margin-bottom: 2%;">
                 <label for="inputTitle" class="col-sm-2 col-form-label">Title</label>
@@ -81,7 +81,7 @@
                 </div>
               </div>
             </form>
-            <a href="#" class="btn btn-primary">Upload</a>
+            <button onclick="validateForm()" type="submit" id="submitForm" class="btn btn-primary"> Upload</button>
           </div>
         </div>
       </div> 
