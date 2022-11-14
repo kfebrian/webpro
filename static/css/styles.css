@@ -64,16 +64,14 @@
   --bs-body-bg: #fff;
 }
 
-tr{
-  text-align: center;
+#searchResult{
+  margin-top: 8rem;
+  padding: 0 5rem;
+  height: 10rem;
 }
 
 td{
-  height: 8rem;
-}
-
-td button{
-  margin-top: 30%;
+  height: 4rem;
 }
 
 #searchTable{
