@@ -1,93 +1,72 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
     <title>Register | E-Reference</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/png" sizes="96x96" href="static/assets/favicon/favicon-96x96.png">
+    
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/styles.css">
-  </head>
-  <body>
-    <section class="vh-100 overflow-auto" style="background-color: #eee;">
-      <div class="container vh-100 ">
-        <div class="row d-flex justify-content-center align-items-center vh-100">
-          <div class="col-lg-12 col-xl-11">
-            <div class="card text-black" style="border-radius: 25px;">
-              <div class="card-body p-md-5">
-                <div class="row justify-content-center">
-                  <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-    
-                    <p class="lol text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-    
-                    <form class="mx-1 mx-md-4">
-    
-                      <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                          <input type="text" id="name" class="form-control" />
-                          <label class="form-label" for="form3Example1c">Your Name</label>
-                        </div>
-                      </div>
-    
-                      <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                          <input type="email" id="email" class="form-control" />
-                          <label class="form-label" for="form3Example3c">Your Email</label>
-                        </div>
-                      </div>
-    
-                      <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                          <input onchange="getPass()" type="password" id="password" class="form-control" />
-                          <label class="form-label" for="form3Example4c">Password</label>
-                        </div>
-                      </div>
-    
-                      <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                          <input onchange="getConfirmPass()" type="password" id="confirm" class="form-control" />
-                          <label class="form-label" for="form3Example4cd">Confirm password</label>
-                        </div>
-                      </div>
-    
-                      <div class="form-check d-flex justify-content-center mb-5">
-                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                        <label class="form-check-label" for="form2Example3">
-                          I agree all statements in <a href="#!">Terms of service</a>
-                        </label>
-                      </div>
-    
-                      <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                        <button type="button" id="register" class="btn btn-primary btn-lg"><a style="color: white; text-decoration:none;" href="login.html">Register</a></button>
-                      </div>
-                      
-                      <p class="text-center text-muted mt-5 mb-0">Already have an account? 
-                        <a href="login.html">Login here</a></p>
-                    </form>
-    
-                  </div>
-                  <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-    
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
-                      class="img-fluid" alt="Sample image">
-    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+</head>
+<body>
+
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+            <h3>Welcome</h3>
+            <p>In a moment you will enjoy the reference you need!</p>
+            <input type="submit" name="" href="login.html" value="Login"/><br/>
         </div>
-      </div>
-    </section>
-    
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="./js/register.js"></script>
-  </body>
+        <div class="col-md-9 register-right">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Create New Account</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group" style="margin-bottom: 2%;">
+                                  <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                </div>
+                                <div class="form-group" style="margin-bottom: 2%;">
+                                    <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                </div>
+                                <div class="form-group" style="margin-bottom: 2%;">
+                                    <input onchange="getPass()" type="password" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group" style="margin-bottom: 5%;">
+                                    <div class="maxl">
+                                        <label class="radio inline padding-right-10"> 
+                                            <input type="radio" name="gender" value="male" checked>
+                                            <span> Male </span> 
+                                        </label>
+                                        <label class="radio inline"> 
+                                            <input type="radio" name="gender" value="female">
+                                            <span>Female </span> 
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="button" id="register" class="btn btn-primary"><a style="color: white; text-decoration:none;" href="login.html">Register</a></button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group" style="margin-bottom: 2%;">
+                                    <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group" style="margin-bottom: 2%;">
+                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                </div>
+                                <div class="form-group" style="margin-bottom: 2%;">
+                                    <input onchange="getConfirmPass()" type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                </div>
+                                
+                            </div>
+                        </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="./js/register.js"></script>
+</body>
 </html>
